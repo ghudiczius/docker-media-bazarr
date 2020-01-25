@@ -7,7 +7,7 @@ Simple docker image for Bazarr without any bloat, built on the official python3 
 ```sh
 docker run --rm ghudiczius/bazarr:<VERSION> \
   -p 6767:6767 \
-  -v path/to/config:/config \
+  -v path/to/data:/data \
   -v path/to/movies:/movies \
   -v path/to/series:/series
 ```

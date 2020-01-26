@@ -7,7 +7,8 @@ RUN groupadd --gid=1000 bazarr && \
     mkdir /data /movies /opt/bazarr /series && \
     curl --location --output /tmp/bazarr.tar.gz --silent "https://github.com/morpheus65535/bazarr/archive/v${VERSION}.tar.gz" && \
     tar xvzf /tmp/bazarr.tar.gz --directory=/opt/bazarr --strip-components=1 && \
-    chown --recursive 1000:1000 /data /movies /opt/bazarr /series
+    chown --recursive 1000:1000 /data /movies /opt/bazarr /series && \
+    rm /tmp/bazarr.tar.gz
 
 USER 1000
 VOLUME /data /movies /series

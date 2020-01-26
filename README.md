@@ -1,6 +1,6 @@
 # Bazarr
 
-Simple docker image for Bazarr without any bloat, built on the official python3 image. Bazarr runs as user `bazarr` with `uid` and `gid` 6767.
+Simple docker image for Bazarr without any bloat, built on the official python3 image. Bazarr runs as user `bazarr` with `uid` and `gid` `1000` and listens on port `6767`.
 
 ## Usage
 

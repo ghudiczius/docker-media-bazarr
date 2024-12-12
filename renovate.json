@@ -1,0 +1,16 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "commitMessagePrefix": "renovate:",
+  "customManagers": [{
+    "customType": "regex",
+    "datasourceTemplate": "github-releases",
+    "depNameTemplate": "morpheus65535/bazarr",
+    "fileMatch": [
+      "^.gitlab-ci\\.ya?ml$"
+    ],
+    "matchStrings": [
+      "VERSION: \"(?<currentValue>\\d+\\.\\d+\\.\\d+)\""
+    ],
+    "versioningTemplate": "semver"
+  }]
+}

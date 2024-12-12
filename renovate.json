@@ -12,5 +12,11 @@
       "VERSION: \"(?<currentValue>\\d+\\.\\d+\\.\\d+)\""
     ],
     "versioningTemplate": "semver"
+  }],
+  "packageRules": [{
+    "allowedVersions": "<3.13",
+    "matchPackageNames": [
+      "python"
+    ]
   }]
 }

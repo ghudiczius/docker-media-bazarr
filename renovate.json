@@ -18,5 +18,21 @@
     "matchPackageNames": [
       "python"
     ]
+  }, {
+    "autoApprove": true,
+    "matchUpdateTypes": [
+      "major"
+    ]
+  }, {
+    "automerge": true,
+    "matchUpdateTypes": [
+      "minor"
+    ]
+  }, {
+    "automerge": true,
+    "automergeType": "branch",
+    "matchUpdateTypes": [
+      "patch"
+    ]
   }]
 }

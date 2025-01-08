@@ -5,7 +5,7 @@ Simple docker image for Bazarr without any bloat, built on the official python3 
 ## Usage
 
 ```sh
-docker run --rm registry.gitlab.jmk.hu/media/bazarr:<VERSION> \
+docker run --rm ghudiczius/bazarr:<VERSION> \
   -p 6767:6767 \
   -v path/to/data:/data \
   -v path/to/movies:/movies \
@@ -15,7 +15,7 @@ docker run --rm registry.gitlab.jmk.hu/media/bazarr:<VERSION> \
 or
 
 ```sh
-docker run --rm ghudiczius/bazarr:<VERSION> \
+docker run --rm registry.gitlab.jmk.hu/media/bazarr:<VERSION> \
   -p 6767:6767 \
   -v path/to/data:/data \
   -v path/to/movies:/movies \
